@@ -139,7 +139,7 @@ int hoshen_kopelman(int **matrix, int m, int n) {
   
       print_matrix(matrix,m,n);
       printf("\n");
-  int *new_labels = calloc(sizeof(int), n_labels); // allocate array, initialized to zero
+  /*int *new_labels = calloc(sizeof(int), n_labels); // allocate array, initialized to zero
   
   for (int i=0; i<m; i++)
     for (int j=0; j<n; j++)
@@ -155,7 +155,8 @@ int hoshen_kopelman(int **matrix, int m, int n) {
   int total_clusters = new_labels[0];
 
   free(new_labels);
-  uf_done();
+*/  uf_done();
+    int total_clusters = labels[0];
   return total_clusters;
 }
 
